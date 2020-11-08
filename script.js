@@ -2,7 +2,7 @@ const scene = document.querySelector('.scene');
 
 function createSquares() {
     const square = document.createElement('span');
-    const size = 20 + Math.floor(Math.random() * 20);
+    const size = 10 + Math.floor(Math.random() * 40);
     const x = Math.floor(Math.random() * window.innerWidth);
     const y = Math.floor(Math.random() * window.innerHeight);
 
@@ -20,4 +20,4 @@ function createSquares() {
     }, 5000);
 }
 
-setInterval(createSquares, 500);
+setInterval(createSquares, 200);
